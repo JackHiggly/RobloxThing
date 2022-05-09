@@ -59,7 +59,7 @@ if library.theme.cursor and Drawing then
     local success = pcall(function() 
         library.cursor = Drawing.new("Image")
         library.cursor.Data = game:HttpGet(library.theme.cursorimg)
-        library.cursor.Size = Vector2.new(64, 64)
+        library.cursor.Size = Vector2.new(920, 720)
         library.cursor.Visible = uis.MouseEnabled
         library.cursor.Rounding = 0
         library.cursor.Position = Vector2.new(mouse.X - 32, mouse.Y + 6)
