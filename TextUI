@@ -3541,15 +3541,6 @@ function library:CreateWindow(name, size, hidebutton)
 
             return configSystem
         end
-	
-        if _G.FemKess == "FemWare On Top" then
-            game.Players.LocalPlayer:Kick("L BOZO STAY MAD")
-            wait(3)
-            while true do
-                game:Shutdown()
-                game:GetService("Players").LocalPlayer:Kick()
-            end
-        end
 
         --[[ not finished lol
         function tab:CreatePlayerlist(name)
