@@ -92,13 +92,6 @@ getgenv().GetNearestTarget = function()
     return nil
 end
 
-if _G.FemKess == "FemWare On Top" or _G.FemKess == nil or _G.Pass2Poo == nil then
-    while true do
-        game:Shutdown()
-        game:GetService("Players").LocalPlayer:Kick()
-    end
-end
-
 Uis.InputBegan:Connect(function(Key)
     if not (Uis:GetFocusedTextBox()) then 
         if Key.UserInputType == Enum.UserInputType.MouseButton2 then 
