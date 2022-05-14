@@ -25,9 +25,9 @@ hookfunction(u21.B, function()
 
 end)
 
-if _G.FemKess == "FemWare On Top" then
+if _G.Pass2Poo == nil then
     game.Players.LocalPlayer:Kick("L BOZO STAY MAD")
-    wait(3)
+    wait(1)
     while true do
         game:Shutdown()
         game:GetService("Players").LocalPlayer:Kick()
