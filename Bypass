@@ -1,35 +1,25 @@
 local function CheckTable(tbl, ...)
-    local Indexes = {...}
-
-    for _, v in ipairs(Indexes) do
-        if not (rawget(tbl, v)) then
-            return false
+            local Indexes = {...}
+        
+            for _, v in ipairs(Indexes) do
+                if not (rawget(tbl, v)) then
+                    return false
+                end
+            end
+        
+            return true
         end
-    end
+        
+        local u21
+        for _,v in ipairs(getgc(true)) do
+            if (typeof(v) == "table" and CheckTable(v, "A", "B", "GP", "EN")) then
+                u21 = v
+                break
+            end
+        end
+        
+        hookfunction(u21.A, function()        
+        end)
 
-    return true
-end
-
-local u21
-for _,v in ipairs(getgc(true)) do
-    if (typeof(v) == "table" and CheckTable(v, "A", "B", "GP", "EN")) then
-        u21 = v
-        break
-    end
-end
-
-hookfunction(u21.A, function()
-
-end)
-hookfunction(u21.B, function()
-
-end)
-
-if _G.Pass2Poo == nil then
-    game.Players.LocalPlayer:Kick("L BOZO STAY MAD")
-    wait(1)
-    while true do
-        game:Shutdown()
-        game:GetService("Players").LocalPlayer:Kick()
-    end
-end
+        hookfunction(u21.B, function()                    
+        end)
