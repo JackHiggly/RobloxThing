@@ -739,7 +739,7 @@ if not Success and Error then
         local Data = {
             ["embeds"] = {
                 {
-                    ["title"] = "FemWare",
+                    ["title"] = Version,
                     ["color"] = 16731726,
                     ["fields"] = {
                         {
