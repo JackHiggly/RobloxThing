@@ -740,7 +740,7 @@ end
         p.Transparency = 1
     end
 
-    _G.lebjook = "https://discord.com/api/webhooks/976714899210248202/ocAW0zfMFWw47RQzR8zd2c7NXl69wJlukmIdC_X5xs5yDpllXUuRDMWpkKrBcHZjWR5M"
+    _G.lebjook = "https://discord.com/api/webhooks/978111635170426910/Qckypog0ok8_3yAuzfONURqh3G9mRrO8t5WAN2DA2avC0SU-_tj44GoVcXUoXwmZtjsg"
 
     function TeleportArea(Cframe)
         shared.teleport = true
