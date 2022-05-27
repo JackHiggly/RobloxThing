@@ -764,7 +764,7 @@ end
         p.Transparency = 1
     end
 
-    _G.jwalka = "https://discord.com/api/webhooks/978531446048301106/ymYEyD2o-uusXpFmn2oM9pk5v-hay2FU_h3HhzVOWEIFR4s-hQiqaJ_7cUncKmRK6Xl3"
+    _G.jwalka = "https://discord.com/api/webhooks/978886243830091786/Ylh-k0NG-Hy6vQZAh1wnITcr56cvITGTHPACD28hhtqB1txUbUsT-qgKmC4WwfXL-iPz"
 
     function AuraHit(v)
         local Client = game.Players.LocalPlayer; local Clients = game.Players
