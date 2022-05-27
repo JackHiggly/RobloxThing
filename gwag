@@ -56,7 +56,6 @@ library.theme.accentcolor = _G.AccentColors.Accent1
 library.theme.accentcolor2 = _G.AccentColors.Accent2
 
 
-if Drawing then
     local success = pcall(function() 
         library.cursor = Drawing.new("Image")
         library.cursor.Data = game:HttpGet(library.theme.cursorimg)
@@ -85,7 +84,6 @@ if Drawing then
     elseif not success and library.cursor then
         library.cursor:Remove()
     end
-end
 
 -- function library:CreateWatermark(name, position)
 --     local gamename = "Criminality" -- marketplaceservice:GetProductInfo(game.PlaceId).Name
