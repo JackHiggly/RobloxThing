@@ -78,6 +78,8 @@ if library.theme.cursor and Drawing then
             uis.OverrideMouseIconBehavior = Enum.OverrideMouseIconBehavior.ForceHide
             if library.cenable == true then
                 library.cursor.Visible = uis.MouseEnabled and (uis.MouseIconEnabled or game:GetService("GuiService").MenuIsOpen)
+            else
+                library.cursor.Visible = false
             end
         end)
     elseif not success and library.cursor then
