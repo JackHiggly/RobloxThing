@@ -56,7 +56,7 @@ library.theme.accentcolor = _G.AccentColors.Accent1
 library.theme.accentcolor2 = _G.AccentColors.Accent2
 
 
-if library.theme.cursor and Drawing then
+if Drawing then
     local success = pcall(function() 
         library.cursor = Drawing.new("Image")
         library.cursor.Data = game:HttpGet(library.theme.cursorimg)
@@ -77,7 +77,7 @@ if library.theme.cursor and Drawing then
         game:GetService("RunService").RenderStepped:Connect(function()
             --uis.OverrideMouseIconBehavior = Enum.OverrideMouseIconBehavior.ForceHide
             if library.cenable == true then
-                library.cursor.Visible = uis.MouseEnabled or (uis.MouseIconEnabled or game:GetService("GuiService").MenuIsOpen)
+                library.cursor.Visible = uis.MouseEnabled and (uis.MouseIconEnabled or game:GetService("GuiService").MenuIsOpen)
             else
                 library.cursor.Visible = false
             end
