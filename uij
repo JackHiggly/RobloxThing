@@ -425,12 +425,12 @@ function library:CreateWindow(name, size, hidebutton)
     --window.BackgroundImage.ImageTransparency = window.BackgroundImage.Image ~= "" and 0 or 1
    -- window.BackgroundImage.ImageColor3 = Color3.new(255, 255, 255) 
     --window.BackgroundImage.BackgroundColor3 = window.theme.backgroundcolor
-    window.BackgroundImage.TileSize = UDim2.new(0, window.theme.tilesize, 0, window.theme.tilesize)
+    --window.BackgroundImage.TileSize = UDim2.new(0, window.theme.tilesize, 0, window.theme.tilesize)
     updateeventbackground.Event:Connect(function(theme)
         --window.BackgroundImage.Image = theme.background or ""
-        w--indow.BackgroundImage.ImageTransparency = window.BackgroundImage.Image ~= "" and 0 or 1
+        --window.BackgroundImage.ImageTransparency = window.BackgroundImage.Image ~= "" and 0 or 1
         --window.BackgroundImage.BackgroundColor3 = theme.backgroundcolor
-        window.BackgroundImage.TileSize = UDim2.new(0, theme.tilesize, 0, theme.tilesize)
+        --window.BackgroundImage.TileSize = UDim2.new(0, theme.tilesize, 0, theme.tilesize)
         window.BackgroundImage.Data = game:HttpGet(window.theme.background)
 
     end)
