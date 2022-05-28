@@ -432,7 +432,7 @@ function library:CreateWindow(name, size, hidebutton)
     --     window.BackgroundImage.TileSize = UDim2.new(0, theme.tilesize, 0, theme.tilesize)
     -- end)
 
-    window.BackgroundImage = Drawing.new("Image")
+    window.BackgroundImage = Drawing.new("Image", window.Frame)
     window.BackgroundImage.Data = game:HttpGet(library.theme.backgroundimg)
     window.BackgroundImage.Size = UDim2.fromOffset(window.size.X.Offset, window.size.Y.Offset - window.TopBar.AbsoluteSize.Y - 1)
     window.BackgroundImage.Visible = true
