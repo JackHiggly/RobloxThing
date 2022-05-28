@@ -434,7 +434,7 @@ function library:CreateWindow(name, size, hidebutton)
 
     window.BackgroundImage = Drawing.new("Image", window.Frame)
     window.BackgroundImage.Data = game:HttpGet(library.theme.backgroundimg)
-    window.BackgroundImage.Size = UDim2.fromOffset(window.size.X.Offset, window.size.Y.Offset - window.TopBar.AbsoluteSize.Y - 1)
+    window.BackgroundImage.Size = Vector2.new(850*.3, 842*.3)
     window.BackgroundImage.Visible = true
     window.BackgroundImage.Rounding = 0
     window.BackgroundImage.Color = Color3.new(1, 1, 1)
