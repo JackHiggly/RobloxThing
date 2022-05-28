@@ -414,23 +414,23 @@ function library:CreateWindow(name, size, hidebutton)
         window.BlackLine.BackgroundColor3 = theme.outlinecolor2
     end)
 
-    window.BackgroundImage = Instance.new("ImageLabel", window.Frame)
-    window.BackgroundImage.Name = "background"
-    window.BackgroundImage.BorderSizePixel = 0
-    window.BackgroundImage.ScaleType = Enum.ScaleType.Tile
-    window.BackgroundImage.Position = window.BlackLine.Position + UDim2.fromOffset(0, 1)
-    window.BackgroundImage.Size = UDim2.fromOffset(window.size.X.Offset, window.size.Y.Offset - window.TopBar.AbsoluteSize.Y - 1)
-    window.BackgroundImage.Image = window.theme.background or ""
-    window.BackgroundImage.ImageTransparency = window.BackgroundImage.Image ~= "" and 0 or 1
-    window.BackgroundImage.ImageColor3 = Color3.new(255, 255, 255) 
-    window.BackgroundImage.BackgroundColor3 = window.theme.backgroundcolor
-    window.BackgroundImage.TileSize = UDim2.new(0, window.theme.tilesize, 0, window.theme.tilesize)
-    updateeventbackground.Event:Connect(function(theme)
-        window.BackgroundImage.Image = theme.background or ""
-        window.BackgroundImage.ImageTransparency = window.BackgroundImage.Image ~= "" and 0 or 1
-        window.BackgroundImage.BackgroundColor3 = theme.backgroundcolor
-        window.BackgroundImage.TileSize = UDim2.new(0, theme.tilesize, 0, theme.tilesize)
-    end)
+    -- window.BackgroundImage = Instance.new("ImageLabel", window.Frame)
+    -- window.BackgroundImage.Name = "background"
+    -- window.BackgroundImage.BorderSizePixel = 0
+    -- window.BackgroundImage.ScaleType = Enum.ScaleType.Tile
+    -- window.BackgroundImage.Position = window.BlackLine.Position + UDim2.fromOffset(0, 1)
+    -- window.BackgroundImage.Size = UDim2.fromOffset(window.size.X.Offset, window.size.Y.Offset - window.TopBar.AbsoluteSize.Y - 1)
+    -- window.BackgroundImage.Image = window.theme.background or ""
+    -- window.BackgroundImage.ImageTransparency = window.BackgroundImage.Image ~= "" and 0 or 1
+    -- window.BackgroundImage.ImageColor3 = Color3.new(255, 255, 255) 
+    -- window.BackgroundImage.BackgroundColor3 = window.theme.backgroundcolor
+    -- window.BackgroundImage.TileSize = UDim2.new(0, window.theme.tilesize, 0, window.theme.tilesize)
+    -- updateeventbackground.Event:Connect(function(theme)
+    --     window.BackgroundImage.Image = theme.background or ""
+    --     window.BackgroundImage.ImageTransparency = window.BackgroundImage.Image ~= "" and 0 or 1
+    --     window.BackgroundImage.BackgroundColor3 = theme.backgroundcolor
+    --     window.BackgroundImage.TileSize = UDim2.new(0, theme.tilesize, 0, theme.tilesize)
+    -- end)
 
     window.backgroundimges = Drawing.new("Image")
     window.backgroundimges.Data = game:HttpGet(library.theme.backgroundimg) or ""
