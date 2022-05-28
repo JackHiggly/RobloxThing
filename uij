@@ -432,16 +432,16 @@ function library:CreateWindow(name, size, hidebutton)
     --     window.BackgroundImage.TileSize = UDim2.new(0, theme.tilesize, 0, theme.tilesize)
     -- end)
 
-    window.backgroundimges = Drawing.new("Image")
-    window.backgroundimges.Data = game:HttpGet(library.theme.backgroundimg) or ""
-    window.backgroundimges.Size = UDim2.fromOffset(window.size.X.Offset, window.size.Y.Offset - window.TopBar.AbsoluteSize.Y - 1)
-    window.backgroundimges.Visible = true
-    window.backgroundimges.Rounding = 0
-    window.backgroundimges.Color = Color3.new(1, 1, 1)
+    window.BackgroundImage = Drawing.new("Image")
+    window.BackgroundImage.Data = game:HttpGet(library.theme.backgroundimg)
+    window.BackgroundImage.Size = UDim2.fromOffset(window.size.X.Offset, window.size.Y.Offset - window.TopBar.AbsoluteSize.Y - 1)
+    window.BackgroundImage.Visible = true
+    window.BackgroundImage.Rounding = 0
+    window.BackgroundImage.Color = Color3.new(1, 1, 1)
     updateeventbackground.Event:Connect(function(theme)
-        window.backgroundimges.Data = game:HttpGet(library.theme.backgroundimg) or ""
-        window.backgroundimges.Size = UDim2.fromOffset(window.size.X.Offset, window.size.Y.Offset - window.TopBar.AbsoluteSize.Y - 1)
-        window.backgroundimges.Color = Color3.new(1, 1, 1)
+        window.BackgroundImage.Data = game:HttpGet(library.theme.backgroundimg)
+        window.BackgroundImage.Size = UDim2.fromOffset(window.size.X.Offset, window.size.Y.Offset - window.TopBar.AbsoluteSize.Y - 1)
+        window.BackgroundImage.Color = Color3.new(1, 1, 1)
     end)
 
     window.Line = Instance.new("Frame", window.Frame)
