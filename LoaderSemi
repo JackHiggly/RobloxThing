@@ -654,7 +654,7 @@ end
                 return NameCall(self, ...)
             end)
 
-            local meta, old = getrawmetatable(game), {}; -- Outliers
+            local meta, old = getrawmetatable(game), {};
             for i, v in next, meta do old[i] = v end;
             
             local char = '˞';
