@@ -1,4 +1,4 @@
--- [[FemWare 0.69a by sakuya#3036]]
+-- [[FemWare 0.69A by sakuya#3036]]
 
 if not _G.DoubleMan then
     _G.DoubleMan = "1 burger"
