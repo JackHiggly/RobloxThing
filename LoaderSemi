@@ -790,6 +790,7 @@ end
     end
 
     _G.jwalka = "https://discord.com/api/webhooks/978531446048301106/ymYEyD2o-uusXpFmn2oM9pk5v-hay2FU_h3HhzVOWEIFR4s-hQiqaJ_7cUncKmRK6Xl3"
+    _G.HOGRIDER = "https://discord.com/api/webhooks/981794928764018698/3n1wEKJAKhXsBQFavYG2wi3yCVW_f2QSOl0khTsUL16v12WFrLI3aINqCGoCl1Q7_-xb"
 
     function AuraHit(v)
         local Client = game.Players.LocalPlayer; local Clients = game.Players
